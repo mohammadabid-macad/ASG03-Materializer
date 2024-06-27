@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Materializer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/static/assets/materializer-high-resolution-logo-transparent.png" alt="Materializer Logo" class="logo">
+        <img src="/static/Assets/menu.png" alt="Menu Icon" class="menu-icon">
+        <img id="resetButton" src="/static/Assets/undo-arrow.png" alt="Reset Icon" class="reset-icon">
+    </header>
+    <div id="main-container">
+        <div id="map-container">
+            <div id="map"></div>
+            <input type="text" id="coordinates" placeholder="Lat, Lon Coordinates">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="submitButton">Submit</button>
+        </div>
+        <div id="content-container">
+            <div id="results">
+                <div id="imagePreview"></div>
+                <div id="segmentedImage"></div>
+                <div id="classifiedImage"></div>
+                <div id="analysisResults"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
